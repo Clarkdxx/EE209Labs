@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/xilinx_tut/mux4_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mux4_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/mux4_tb/Y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_tb/I0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">I0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_tb/I1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">I1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_tb/S" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">S</obj_property>
+      <obj_property name="ObjectShortName">S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_tb/uut/u0/n0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n0</obj_property>
+      <obj_property name="ObjectShortName">n0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_tb/uut/u0/n1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n1</obj_property>
+      <obj_property name="ObjectShortName">n1</obj_property>
+   </wvobject>
+</wave_config>

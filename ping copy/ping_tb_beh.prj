@@ -1,0 +1,8 @@
+verilog work "reg8e.v"
+verilog work "mult16x16.v"
+verilog work "dff1s.v"
+verilog work "compeq16.v"
+verilog work "cntr16ce.v"
+verilog work "ping.v"
+verilog work "ping_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

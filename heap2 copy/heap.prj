@@ -1,0 +1,8 @@
+verilog work "reg8e.v"
+verilog work "pe4_2.v"
+verilog work "mux3_8bit.v"
+verilog work "mem16x8.v"
+verilog work "ctrlpush.v"
+verilog work "ctrlpop.v"
+verilog work "cntr8.v"
+verilog work "heap.v"

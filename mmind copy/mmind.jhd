@@ -1,0 +1,5 @@
+MODULE mmind
+	SUBMODULE mmind_fsm
+		INSTANCE FSM
+	SUBMODULE sevenseg_decoder
+		INSTANCE SEVSEG

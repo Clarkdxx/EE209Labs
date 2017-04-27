@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/heap3/heap_soc_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="heap_soc_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/heap_soc_tb/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/heap_soc_tb/RESET" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="group22" type="group">
+      <obj_property name="label">TOP-LEVEL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/heap_soc_tb/DISP" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DISP[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DISP[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/BTNS" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">BTNS[3:0]</obj_property>
+         <obj_property name="ObjectShortName">BTNS[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/SWITCHES" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">SWITCHES[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SWITCHES[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/heap_soc_tb/UUT/reg_disp/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="group35" type="group">
+      <obj_property name="label">PBLAZE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/heap_soc_tb/UUT/address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">address[11:0]</obj_property>
+         <obj_property name="ObjectShortName">address[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/instruction" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instruction[17:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/port_id" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">port_id[7:0]</obj_property>
+         <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/out_port" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">out_port[7:0]</obj_property>
+         <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/write_strobe" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_strobe</obj_property>
+         <obj_property name="ObjectShortName">write_strobe</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/in_port" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">in_port[7:0]</obj_property>
+         <obj_property name="ObjectShortName">in_port[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group36" type="group">
+      <obj_property name="label">HEAP-ENGINE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/heap_soc_tb/UUT/dout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/size" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">size[7:0]</obj_property>
+         <obj_property name="ObjectShortName">size[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/din" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/push" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">push</obj_property>
+         <obj_property name="ObjectShortName">push</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/pop" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pop</obj_property>
+         <obj_property name="ObjectShortName">pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/heap_soc_tb/UUT/done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/heap_soc_tb/UUT/mux3/Y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/heap_soc_tb/UUT/doneflag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">doneflag</obj_property>
+      <obj_property name="ObjectShortName">doneflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/heap_soc_tb/UUT/ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ack</obj_property>
+      <obj_property name="ObjectShortName">ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/heap_soc_tb/UUT/reg_din/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+</wave_config>

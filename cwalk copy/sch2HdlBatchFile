@@ -1,0 +1,4 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/mux8bit_4x1.vf,-w,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/mux8bit_4x1.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/cwalk.vf,-w,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/cwalk.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/cwalk_fsm.vf,-w,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/cwalk_fsm.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/cwalk_top.vf,-w,C:/Users/Mark/Dropbox/EE209/Lab/Crosswalk/cwalk/cwalk_top.sch

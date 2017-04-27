@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "U:/Documents/EE209Labs/ping/ping_tb_isim_beh.exe" -prj "U:/Documents/EE209Labs/ping/ping_tb_beh.prj" "work.ping_tb" "work.glbl" 

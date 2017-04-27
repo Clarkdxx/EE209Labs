@@ -1,0 +1,545 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: heap.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "heap.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "heap"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : heap
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\reg8e.v" into library work
+Parsing module <reg8e>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\dff1s.v" into library work
+Parsing module <dff1s>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpush.v" into library work
+Parsing module <ctrlpush>.
+Parsing module <mux21_8bit>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\pe4_2.v" into library work
+Parsing module <pe4_2>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\mux3_8bit.v" into library work
+Parsing module <mux3_8bit>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\mem256x8.v" into library work
+Parsing module <mem256x8>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpop.v" into library work
+Parsing module <ctrlpop>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\cntr8.v" into library work
+Parsing module <cntr8>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\heap.v" into library work
+Parsing module <heap>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <heap>.
+
+Elaborating module <cntr8>.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\cntr8.v" Line 33: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\cntr8.v" Line 34: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <mem256x8>.
+
+Elaborating module <pe4_2>.
+
+Elaborating module <mux3_8bit>.
+
+Elaborating module <ctrlpush>.
+
+Elaborating module <dff1s>.
+
+Elaborating module <reg8e>.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpush.v" Line 103: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <mux21_8bit>.
+
+Elaborating module <ctrlpop>.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpop.v" Line 127: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpop.v" Line 172: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <heap>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\heap.v".
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\heap.v" line 57: Output port <V> of the instance <goenc> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <popworking>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <pushworking>.
+    Found 8-bit comparator greater for signal <size[7]_PWR_1_o_LessThan_2_o> created at line 63
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <heap> synthesized.
+
+Synthesizing Unit <cntr8>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\cntr8.v".
+    Found 8-bit register for signal <q_fb>.
+    Found 8-bit adder for signal <q_fb[7]_GND_2_o_add_3_OUT> created at line 33.
+    Found 8-bit subtractor for signal <GND_2_o_GND_2_o_sub_6_OUT<7:0>> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+Unit <cntr8> synthesized.
+
+Synthesizing Unit <mem256x8>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\mem256x8.v".
+    Found 256x8-bit single-port RAM <Mram_mem_array> for signal <mem_array>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <mem256x8> synthesized.
+
+Synthesizing Unit <pe4_2>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\pe4_2.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pe4_2> synthesized.
+
+Synthesizing Unit <mux3_8bit>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\mux3_8bit.v".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <mux3_8bit> synthesized.
+
+Synthesizing Unit <ctrlpush>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpush.v".
+    Found 8-bit adder for signal <size_add_1> created at line 103.
+    Found 8-bit comparator greater for signal <size_gt_0> created at line 40
+    Found 8-bit comparator greater for signal <din_lt_p> created at line 42
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <ctrlpush> synthesized.
+
+Synthesizing Unit <dff1s>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\dff1s.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff1s> synthesized.
+
+Synthesizing Unit <reg8e>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\reg8e.v".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg8e> synthesized.
+
+Synthesizing Unit <mux21_8bit>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpush.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux21_8bit> synthesized.
+
+Synthesizing Unit <ctrlpop>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\heap1\ctrlpop.v".
+    Found 9-bit adder for signal <n0052> created at line 40.
+    Found 9-bit adder for signal <n0054> created at line 140.
+    Found 8-bit comparator greater for signal <size_gt_2> created at line 39
+    Found 9-bit comparator greater for signal <cidx_1_gt_size> created at line 40
+    Found 8-bit comparator greater for signal <c_lt_p> created at line 41
+    Found 8-bit comparator greater for signal <cidx2_lte_size_INV_26_o> created at line 43
+    Found 9-bit comparator greater for signal <BUS_0003_GND_10_o_LessThan_9_o> created at line 140
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <ctrlpop> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port RAM                             : 1
+# Adders/Subtractors                                   : 4
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 21
+ 1-bit register                                        : 14
+ 8-bit register                                        : 7
+# Comparators                                          : 8
+ 8-bit comparator greater                              : 6
+ 9-bit comparator greater                              : 2
+# Multiplexers                                         : 15
+ 2-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 14
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <cntr8>.
+The following registers are absorbed into counter <q_fb>: 1 register on signal <q_fb>.
+Unit <cntr8> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mem256x8>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem_array> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wen>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <mem256x8> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port distributed RAM                 : 1
+# Adders/Subtractors                                   : 3
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+# Comparators                                          : 8
+ 8-bit comparator greater                              : 6
+ 9-bit comparator greater                              : 2
+# Multiplexers                                         : 14
+ 8-bit 2-to-1 multiplexer                              : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <reg8e> ...
+
+Optimizing unit <heap> ...
+
+Optimizing unit <ctrlpush> ...
+
+Optimizing unit <ctrlpop> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block heap, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : heap.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 221
+#      INV                         : 1
+#      LUT2                        : 23
+#      LUT3                        : 31
+#      LUT4                        : 19
+#      LUT5                        : 29
+#      LUT6                        : 99
+#      MUXCY                       : 7
+#      MUXF7                       : 4
+#      XORCY                       : 8
+# FlipFlops/Latches                : 70
+#      FD                          : 3
+#      FDR                         : 35
+#      FDRE                        : 32
+# RAMS                             : 8
+#      RAM256X1S                   : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 11
+#      OBUF                        : 18
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              70  out of  18224     0%  
+ Number of Slice LUTs:                  234  out of   9112     2%  
+    Number used as Logic:               202  out of   9112     2%  
+    Number used as Memory:               32  out of   2176     1%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    243
+   Number with an unused Flip Flop:     173  out of    243    71%  
+   Number with an unused LUT:             9  out of    243     3%  
+   Number of fully used LUT-FF pairs:    61  out of    243    25%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 78    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.374ns (Maximum Frequency: 186.079MHz)
+   Minimum input arrival time before clock: 5.921ns
+   Maximum output required time after clock: 6.679ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.374ns (frequency: 186.079MHz)
+  Total number of paths / destination ports: 4201 / 166
+-------------------------------------------------------------------------
+Delay:               5.374ns (Levels of Logic = 4)
+  Source:            pop_control/reg_p/q_0 (FF)
+  Destination:       hmem/Mram_mem_array1 (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pop_control/reg_p/q_0 to hmem/Mram_mem_array1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.981  pop_control/reg_p/q_0 (pop_control/reg_p/q_0)
+     LUT6:I0->O            1   0.203   0.808  pop_control/ddone216_SW0 (N54)
+     LUT5:I2->O            6   0.205   0.745  pop_control/ddone216 (pop_control/ddone21)
+     LUT5:I4->O            7   0.205   0.774  pop_control/mwen1 (popmwen)
+     LUT3:I2->O            8   0.205   0.802  mwen1 (mwen)
+     RAM256X1S:WE              0.000          hmem/Mram_mem_array1
+    ----------------------------------------
+    Total                      5.374ns (1.265ns logic, 4.109ns route)
+                                       (23.5% logic, 76.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 307 / 99
+-------------------------------------------------------------------------
+Offset:              5.921ns (Levels of Logic = 5)
+  Source:            din<0> (PAD)
+  Destination:       hmem/Mram_mem_array1 (RAM)
+  Destination Clock: clk rising
+
+  Data Path: din<0> to hmem/Mram_mem_array1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.981  din_0_IBUF (din_0_IBUF)
+     LUT6:I0->O            1   0.203   0.579  push_control/din_lt_p2 (push_control/din_lt_p1)
+     MUXF7:S->O           10   0.148   0.857  push_control/din_lt_p1 (push_control/din_lt_p2)
+     LUT6:I5->O            2   0.205   0.721  push_control/qcomp_din_lt_p_AND_14_o1 (push_control/qcomp_din_lt_p_AND_14_o)
+     LUT3:I1->O            8   0.203   0.802  mwen1 (mwen)
+     RAM256X1S:WE              0.000          hmem/Mram_mem_array1
+    ----------------------------------------
+    Total                      5.921ns (1.981ns logic, 3.940ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 19 / 10
+-------------------------------------------------------------------------
+Offset:              6.679ns (Levels of Logic = 4)
+  Source:            size_cntr/q_fb_5 (FF)
+  Destination:       valid (PAD)
+  Source Clock:      clk rising
+
+  Data Path: size_cntr/q_fb_5 to valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.447   1.233  size_cntr/q_fb_5 (size_cntr/q_fb_5)
+     LUT3:I0->O            2   0.205   0.617  _n00461_SW0 (N16)
+     LUT6:I5->O            2   0.205   0.617  _n00461 (_n00461)
+     LUT3:I2->O            1   0.205   0.579  valid1 (valid_OBUF)
+     OBUF:I->O                 2.571          valid_OBUF (valid)
+    ----------------------------------------
+    Total                      6.679ns (3.633ns logic, 3.046ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.374|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.88 secs
+ 
+--> 
+
+Total memory usage is 265256 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

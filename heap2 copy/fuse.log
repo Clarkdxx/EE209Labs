@@ -1,0 +1,65 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "U:/Documents/EE209Labs/heap3/heap_soc_tb_isim_beh.exe" -prj "U:/Documents/EE209Labs/heap3/heap_soc_tb_beh.prj" "work.heap_soc_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/reg8e.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/mux21_8bit.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/dff1s.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/pe4_2.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/mux3_8bit.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/mem256x8.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/ctrlpush.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/ctrlpop.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/cntr8.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/kcpsm6.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/heap.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/heap_soc.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/heap3/heap_soc_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "U:/Documents/EE209Labs/heap3/heap2_prog.vhdl" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module LUT6_2(INIT=64'b1111111111111111...
+Compiling module FD
+Compiling module LUT6(INIT=64'b01100101010101010)
+Compiling module FDR
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module FDRE
+Compiling module RAM32M
+Compiling module RAM64M
+Compiling module kcpsm6_default
+Compiling module cntr8
+Compiling module mem256x8
+Compiling module pe4_2
+Compiling module mux3_8bit
+Compiling module dff1s
+Compiling module reg8e
+Compiling module mux21_8bit
+Compiling module ctrlpush
+Compiling module ctrlpop
+Compiling module heap
+Compiling module heap_soc
+Compiling module heap_soc_tb
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling package std_logic_signed
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(18,18,0,0,false,fals...]
+Compiling architecture low_level_definition of entity heap2_prog [heap2_prog_default]
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 VHDL Units
+Compiled 57 Verilog Units
+Built simulation executable U:/Documents/EE209Labs/heap3/heap_soc_tb_isim_beh.exe
+Fuse Memory Usage: 76948 KB
+Fuse CPU Usage: 2624 ms

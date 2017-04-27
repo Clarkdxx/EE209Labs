@@ -1,0 +1,10 @@
+Command line:
+   ping_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54041
+
+Thu Apr 06 16:42:25 2017
+
+
+ Elaboration Time: 0.078125 sec

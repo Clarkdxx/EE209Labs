@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "U:/Documents/EE209Labs/vending/vending_top.xst" -ofn "U:/Documents/EE209Labs/vending/vending_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 vending_top.ngc vending_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vending_top_map.ncd vending_top.ngd vending_top.pcf 
+par -w -intstyle ise -ol high -mt off vending_top_map.ncd vending_top.ncd vending_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_top.twx vending_top.ncd -o vending_top.twr vending_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f vending_top.ut vending_top.ncd 

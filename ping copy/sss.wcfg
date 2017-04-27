@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/ping/ping_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ping_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/ping_tb/pulseout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulseout</obj_property>
+      <obj_property name="ObjectShortName">pulseout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/pulseen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulseen</obj_property>
+      <obj_property name="ObjectShortName">pulseen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/convdone" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">convdone</obj_property>
+      <obj_property name="ObjectShortName">convdone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/go" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/inches" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inches</obj_property>
+      <obj_property name="ObjectShortName">inches</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/pulsein" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pulsein</obj_property>
+      <obj_property name="ObjectShortName">pulsein</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/dff_wait/q" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+      <obj_property name="label">wait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/dff_start/q" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+      <obj_property name="label">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/dff_hold/q" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+      <obj_property name="label">hold</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/dff_pulse/q" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+      <obj_property name="label">pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/dff_receive/q" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+      <obj_property name="label">receive</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/dff_delay/q" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+      <obj_property name="label">delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/compeq_2c/eq" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">eq</obj_property>
+      <obj_property name="ObjectShortName">eq</obj_property>
+      <obj_property name="label">t5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/compeq_293c/eq" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">eq</obj_property>
+      <obj_property name="ObjectShortName">eq</obj_property>
+      <obj_property name="label">t750</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/compeq_79c/eq" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">eq</obj_property>
+      <obj_property name="ObjectShortName">eq</obj_property>
+      <obj_property name="label">t200</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/inch_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inch_result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inch_result[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/cm_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cm_result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cm_result[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ping_tb/uut/cntr_pulsein" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cntr_pulsein[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cntr_pulsein[15:0]</obj_property>
+   </wvobject>
+</wave_config>

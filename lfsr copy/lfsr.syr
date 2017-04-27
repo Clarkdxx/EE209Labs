@@ -1,0 +1,461 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: lfsr.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lfsr.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lfsr"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : lfsr
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "mux3.v" in library work
+Compiling verilog file "dff1.v" in library work
+Module <mux3> compiled
+Compiling verilog file "../mmind/reg8.v" in library work
+Module <dff1> compiled
+Compiling verilog file "slreg9.v" in library work
+Module <reg8> compiled
+Compiling verilog file "lfsr.v" in library work
+Module <slreg9> compiled
+Module <lfsr> compiled
+No errors in compilation
+Analysis of file <"lfsr.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <lfsr> in library <work> with parameters.
+	LOAD_KEY = "01"
+	STARTED = "10"
+	STOPPED = "00"
+
+Analyzing hierarchy for module <dff1> in library <work>.
+
+Analyzing hierarchy for module <reg8> in library <work>.
+
+Analyzing hierarchy for module <slreg9> in library <work>.
+
+Analyzing hierarchy for module <dff1> in library <work>.
+
+Analyzing hierarchy for module <mux3> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <lfsr>.
+	LOAD_KEY = 2'b01
+	STARTED = 2'b10
+	STOPPED = 2'b00
+Module <lfsr> is correct for synthesis.
+ 
+Analyzing module <dff1> in library <work>.
+Module <dff1> is correct for synthesis.
+ 
+Analyzing module <reg8> in library <work>.
+Module <reg8> is correct for synthesis.
+ 
+Analyzing module <slreg9> in library <work>.
+Module <slreg9> is correct for synthesis.
+ 
+Analyzing module <mux3> in library <work>.
+Module <mux3> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dff1>.
+    Related source file is "dff1.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff1> synthesized.
+
+
+Synthesizing Unit <mux3>.
+    Related source file is "mux3.v".
+Unit <mux3> synthesized.
+
+
+Synthesizing Unit <reg8>.
+    Related source file is "../mmind/reg8.v".
+Unit <reg8> synthesized.
+
+
+Synthesizing Unit <slreg9>.
+    Related source file is "slreg9.v".
+Unit <slreg9> synthesized.
+
+
+Synthesizing Unit <lfsr>.
+    Related source file is "lfsr.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | state$not0000             (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit xor2 for signal <out_byte>.
+    Found 1-bit xor2 for signal <lfsr_in>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Multiplexer(s).
+Unit <lfsr> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 18
+ 1-bit register                                        : 18
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <lfsr> ...
+
+Optimizing unit <reg8> ...
+
+Optimizing unit <slreg9> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lfsr, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : lfsr.ngr
+Top Level Output File Name         : lfsr
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 44
+#      LUT2                        : 10
+#      LUT3                        : 13
+#      LUT4                        : 10
+#      MUXF5                       : 10
+#      MUXF6                       : 1
+# FlipFlops/Latches                : 20
+#      FDR                         : 18
+#      FDRE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 32
+#      IBUF                        : 23
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       17  out of   4656     0%  
+ Number of Slice Flip Flops:             12  out of   9312     0%  
+ Number of 4 input LUTs:                 33  out of   9312     0%  
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of    232    14%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.731ns (Maximum Frequency: 211.372MHz)
+   Minimum input arrival time before clock: 5.454ns
+   Maximum output required time after clock: 6.290ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.731ns (frequency: 211.372MHz)
+  Total number of paths / destination ports: 75 / 13
+-------------------------------------------------------------------------
+Delay:               4.731ns (Levels of Logic = 5)
+  Source:            shreg/ff1/q (FF)
+  Destination:       shreg/ff0/q (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: shreg/ff1/q to shreg/ff0/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.666  shreg/ff1/q (shreg/ff1/q)
+     LUT3:I1->O            1   0.704   0.000  Mmux__COND_1_6 (Mmux__COND_1_6)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__COND_1_4_f5 (Mmux__COND_1_4_f5)
+     MUXF6:I0->O           1   0.521   0.595  Mmux__COND_1_2_f6 (_COND_1)
+     LUT3:I0->O            1   0.704   0.000  shreg/m0/Y_G (N32)
+     MUXF5:I1->O           1   0.321   0.000  shreg/m0/Y (shreg/myd<0>)
+     FDR:D                     0.308          shreg/ff0/q
+    ----------------------------------------
+    Total                      4.731ns (3.470ns logic, 1.261ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 51 / 41
+-------------------------------------------------------------------------
+Offset:              5.454ns (Levels of Logic = 6)
+  Source:            tap<0> (PAD)
+  Destination:       shreg/ff0/q (FF)
+  Destination Clock: clk rising
+
+  Data Path: tap<0> to shreg/ff0/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  tap_0_IBUF (tap_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Mmux__COND_1_4 (Mmux__COND_1_4)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__COND_1_3_f5 (Mmux__COND_1_3_f5)
+     MUXF6:I1->O           1   0.521   0.595  Mmux__COND_1_2_f6 (_COND_1)
+     LUT3:I0->O            1   0.704   0.000  shreg/m0/Y_G (N32)
+     MUXF5:I1->O           1   0.321   0.000  shreg/m0/Y (shreg/myd<0>)
+     FDR:D                     0.308          shreg/ff0/q
+    ----------------------------------------
+    Total                      5.454ns (4.097ns logic, 1.357ns route)
+                                       (75.1% logic, 24.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 18 / 9
+-------------------------------------------------------------------------
+Offset:              6.290ns (Levels of Logic = 2)
+  Source:            dff_en/q (FF)
+  Destination:       out_en (PAD)
+  Source Clock:      clk rising
+
+  Data Path: dff_en/q to out_en
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.591   1.192  dff_en/q (dff_en/q)
+     LUT2:I0->O            3   0.704   0.531  valid1 (out_en_OBUF)
+     OBUF:I->O                 3.272          out_en_OBUF (out_en)
+    ----------------------------------------
+    Total                      6.290ns (4.567ns logic, 1.723ns route)
+                                       (72.6% logic, 27.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.95 secs
+ 
+--> 
+
+Total memory usage is 310592 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

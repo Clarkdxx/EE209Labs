@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "U:/Documents/EE209Labs/heap3/heap2_top.xst" -ofn "U:/Documents/EE209Labs/heap3/heap2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 heap2_top.ngc heap2_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o heap2_top_map.ncd heap2_top.ngd heap2_top.pcf 
+par -w -intstyle ise -ol high -mt off heap2_top_map.ncd heap2_top.ncd heap2_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml heap2_top.twx heap2_top.ncd -o heap2_top.twr heap2_top.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f heap2_top.ut heap2_top.ncd 

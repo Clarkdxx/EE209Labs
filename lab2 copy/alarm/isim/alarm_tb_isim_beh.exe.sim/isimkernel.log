@@ -1,0 +1,28 @@
+Command line:
+   alarm_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54063
+
+Thu Jan 26 12:24:05 2017
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 1324.64 Meg
+
+ Total Signals          : 27
+ Total Nets             : 26
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 111
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 1324.64 Meg
+
+Thu Jan 26 12:24:42 2017
+

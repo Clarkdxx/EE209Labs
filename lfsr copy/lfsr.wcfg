@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/lfsr/lfsr_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lfsr_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/lfsr_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">key[7:0]</obj_property>
+      <obj_property name="ObjectShortName">key[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/tap" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tap[2:0]</obj_property>
+      <obj_property name="ObjectShortName">tap[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[0:7,7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[0:7,7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/in_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/encryptor/lfsr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lfsr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">lfsr[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/in_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">in_en</obj_property>
+      <obj_property name="ObjectShortName">in_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/start1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start1</obj_property>
+      <obj_property name="ObjectShortName">start1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/stop1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stop1</obj_property>
+      <obj_property name="ObjectShortName">stop1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/enc_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">enc_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">enc_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/enc_en" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">enc_en</obj_property>
+      <obj_property name="ObjectShortName">enc_en</obj_property>
+      <obj_property name="label">enc_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/start2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start2</obj_property>
+      <obj_property name="ObjectShortName">start2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/stop2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stop2</obj_property>
+      <obj_property name="ObjectShortName">stop2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/decryptor/lfsr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lfsr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">lfsr[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/out_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/out_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_en</obj_property>
+      <obj_property name="ObjectShortName">out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/j" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lfsr_tb/encryptor/slreg9_0/d_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d_in</obj_property>
+      <obj_property name="ObjectShortName">d_in</obj_property>
+   </wvobject>
+</wave_config>

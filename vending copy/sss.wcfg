@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/vending/vending_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="vending_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/vending_tb/m" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/c" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">c[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c[7:0]</obj_property>
+      <obj_property name="label">c[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/uut/m_sub" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m_sub[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_sub[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/uut/msnum2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">msnum2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">msnum2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/relq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">relq</obj_property>
+      <obj_property name="ObjectShortName">relq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/reld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reld</obj_property>
+      <obj_property name="ObjectShortName">reld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/reln" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reln</obj_property>
+      <obj_property name="ObjectShortName">reln</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/relc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">relc</obj_property>
+      <obj_property name="ObjectShortName">relc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/reldc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reldc</obj_property>
+      <obj_property name="ObjectShortName">reldc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/reldp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reldp</obj_property>
+      <obj_property name="ObjectShortName">reldp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/rels" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rels</obj_property>
+      <obj_property name="ObjectShortName">rels</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/uut/mge100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mge100</obj_property>
+      <obj_property name="ObjectShortName">mge100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/qcollect" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qcollect</obj_property>
+      <obj_property name="ObjectShortName">qcollect</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/qrelease" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qrelease</obj_property>
+      <obj_property name="ObjectShortName">qrelease</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/qinitc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qinitc</obj_property>
+      <obj_property name="ObjectShortName">qinitc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/qchange" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qchange</obj_property>
+      <obj_property name="ObjectShortName">qchange</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/uut/ceq0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ceq0</obj_property>
+      <obj_property name="ObjectShortName">ceq0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/s5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s5</obj_property>
+      <obj_property name="ObjectShortName">s5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/s10" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s10</obj_property>
+      <obj_property name="ObjectShortName">s10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/s25" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s25</obj_property>
+      <obj_property name="ObjectShortName">s25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/s100" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s100</obj_property>
+      <obj_property name="ObjectShortName">s100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/btnc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">btnc</obj_property>
+      <obj_property name="ObjectShortName">btnc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/btndc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">btndc</obj_property>
+      <obj_property name="ObjectShortName">btndc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/btndp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">btndp</obj_property>
+      <obj_property name="ObjectShortName">btndp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vending_tb/btns" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">btns</obj_property>
+      <obj_property name="ObjectShortName">btns</obj_property>
+   </wvobject>
+</wave_config>

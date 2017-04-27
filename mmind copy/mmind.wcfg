@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/mmind/mmind_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mmind_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/mmind_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/fsm/STATE" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/switches" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switches[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/setans_btn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">setans_btn</obj_property>
+      <obj_property name="ObjectShortName">setans_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/ans_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ans_en</obj_property>
+      <obj_property name="ObjectShortName">ans_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/answer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">answer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">answer[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/guess_btn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">guess_btn</obj_property>
+      <obj_property name="ObjectShortName">guess_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/swcnt_clr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">swcnt_clr</obj_property>
+      <obj_property name="ObjectShortName">swcnt_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/swcnt_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">swcnt_en</obj_property>
+      <obj_property name="ObjectShortName">swcnt_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/guess_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">guess_i</obj_property>
+      <obj_property name="ObjectShortName">guess_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/ans_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ans_i</obj_property>
+      <obj_property name="ObjectShortName">ans_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/equal_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">equal_i</obj_property>
+      <obj_property name="ObjectShortName">equal_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/corr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">corr_en</obj_property>
+      <obj_property name="ObjectShortName">corr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/increment" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increment</obj_property>
+      <obj_property name="ObjectShortName">increment</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/correct" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">correct[3:0]</obj_property>
+      <obj_property name="ObjectShortName">correct[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/uut/corr_clr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">corr_clr</obj_property>
+      <obj_property name="ObjectShortName">corr_clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/ca" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ca</obj_property>
+      <obj_property name="ObjectShortName">ca</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/cb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cb</obj_property>
+      <obj_property name="ObjectShortName">cb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/cc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cc</obj_property>
+      <obj_property name="ObjectShortName">cc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/cd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cd</obj_property>
+      <obj_property name="ObjectShortName">cd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/cf" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cf</obj_property>
+      <obj_property name="ObjectShortName">cf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mmind_tb/cg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cg</obj_property>
+      <obj_property name="ObjectShortName">cg</obj_property>
+   </wvobject>
+</wave_config>

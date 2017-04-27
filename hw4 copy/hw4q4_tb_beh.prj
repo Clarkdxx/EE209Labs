@@ -1,0 +1,5 @@
+verilog work "fa.v"
+verilog work "adder4.v"
+verilog work "hw4_q4.v"
+verilog work "hw4_q4_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

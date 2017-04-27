@@ -1,0 +1,4 @@
+verilog work "dff1.v"
+verilog work "seqdet.v"
+verilog work "seqdet_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,37 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o U:/Documents/EE209Labs/lab3/mmind/mmind_tb_isim_beh.exe -prj U:/Documents/EE209Labs/lab3/mmind/mmind_tb_beh.prj work.mmind_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/mux.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/dff1.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/reg4e.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/inc4.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/sevenseg_decoder.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/reg8e.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/mux8.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/mmind_fsm.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/cntr4.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/mmind.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/lab3/mmind/mmind_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module sevenseg_decoder
+Compiling module mux8
+Compiling module mux
+Compiling module dff1
+Compiling module reg4e
+Compiling module inc4
+Compiling module cntr4
+Compiling module reg8e
+Compiling module mmind_fsm
+Compiling module mmind
+Compiling module mmind_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable U:/Documents/EE209Labs/lab3/mmind/mmind_tb_isim_beh.exe
+Fuse Memory Usage: 28948 KB
+Fuse CPU Usage: 687 ms

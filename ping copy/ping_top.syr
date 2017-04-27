@@ -1,0 +1,661 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: ping_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ping_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ping_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : ping_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "reg8e.v" in library work
+Compiling verilog file "mult16x16.v" in library work
+Module <reg8e> compiled
+Compiling verilog file "dff1s.v" in library work
+Module <mult16x16> compiled
+Compiling verilog file "compeq16.v" in library work
+Module <dff1s> compiled
+Compiling verilog file "cntr16ce.v" in library work
+Module <compeq16> compiled
+Compiling verilog file "sevenseg_decoder.v" in library work
+Module <cntr16ce> compiled
+Compiling verilog file "ping.v" in library work
+Module <sevenseg_decoder> compiled
+Compiling verilog file "bin8_bcd3.v" in library work
+Module <ping> compiled
+Compiling verilog file "ping_top.v" in library work
+Module <bin8_bcd3> compiled
+Module <ping_top> compiled
+No errors in compilation
+Analysis of file <"ping_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ping_top> in library <work>.
+
+Analyzing hierarchy for module <sevenseg_decoder> in library <work>.
+
+Analyzing hierarchy for module <bin8_bcd3> in library <work>.
+
+Analyzing hierarchy for module <ping> in library <work>.
+
+Analyzing hierarchy for module <dff1s> in library <work>.
+
+Analyzing hierarchy for module <cntr16ce> in library <work>.
+
+Analyzing hierarchy for module <compeq16> in library <work>.
+
+Analyzing hierarchy for module <mult16x16> in library <work>.
+
+Analyzing hierarchy for module <reg8e> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ping_top>.
+Module <ping_top> is correct for synthesis.
+ 
+Analyzing module <sevenseg_decoder> in library <work>.
+Module <sevenseg_decoder> is correct for synthesis.
+ 
+Analyzing module <bin8_bcd3> in library <work>.
+Module <bin8_bcd3> is correct for synthesis.
+ 
+Analyzing module <ping> in library <work>.
+WARNING:Xst:852 - "ping.v" line 37: Unconnected input port 'clr' of instance 'dff_wait' is tied to GND.
+WARNING:Xst:852 - "ping.v" line 46: Unconnected input port 'set' of instance 'dff_start' is tied to GND.
+WARNING:Xst:852 - "ping.v" line 55: Unconnected input port 'set' of instance 'dff_hold' is tied to GND.
+WARNING:Xst:852 - "ping.v" line 64: Unconnected input port 'set' of instance 'dff_pulse' is tied to GND.
+WARNING:Xst:852 - "ping.v" line 73: Unconnected input port 'set' of instance 'dff_receive' is tied to GND.
+WARNING:Xst:852 - "ping.v" line 82: Unconnected input port 'set' of instance 'dff_delay' is tied to GND.
+Module <ping> is correct for synthesis.
+ 
+Analyzing module <dff1s> in library <work>.
+Module <dff1s> is correct for synthesis.
+ 
+Analyzing module <cntr16ce> in library <work>.
+Module <cntr16ce> is correct for synthesis.
+ 
+Analyzing module <compeq16> in library <work>.
+Module <compeq16> is correct for synthesis.
+ 
+Analyzing module <mult16x16> in library <work>.
+Module <mult16x16> is correct for synthesis.
+ 
+Analyzing module <reg8e> in library <work>.
+Module <reg8e> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <sevenseg_decoder>.
+    Related source file is "sevenseg_decoder.v".
+    Found 16x2-bit ROM for signal <digit$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <sevenseg_decoder> synthesized.
+
+
+Synthesizing Unit <bin8_bcd3>.
+    Related source file is "bin8_bcd3.v".
+    Found 8-bit comparator greatequal for signal <HUND$cmp_ge0000> created at line 32.
+    Found 8-bit comparator greatequal for signal <HUND$cmp_ge0001> created at line 34.
+    Found 4-bit subtractor for signal <old_ONE_10$addsub0000> created at line 59.
+    Found 4-bit subtractor for signal <old_ONE_14$addsub0000> created at line 69.
+    Found 4-bit subtractor for signal <old_ONE_19$addsub0000> created at line 79.
+    Found 4-bit adder for signal <old_ONE_3$addsub0000> created at line 42.
+    Found 4-bit adder for signal <old_ONE_4$addsub0000> created at line 44.
+    Found 4-bit subtractor for signal <old_ONE_6$addsub0000> created at line 50.
+    Found 4-bit comparator greatequal for signal <old_ONE_6$cmp_ge0000> created at line 48.
+    Found 4-bit adder for signal <old_TEN_12$addsub0000> created at line 62.
+    Found 4-bit adder for signal <old_TEN_13$addsub0000> created at line 70.
+    Found 4-bit comparator greatequal for signal <old_TEN_13$cmp_ge0000> created at line 67.
+    Found 4-bit adder for signal <old_TEN_16$addsub0000> created at line 72.
+    Found 4-bit adder for signal <old_TEN_17$addsub0000> created at line 80.
+    Found 4-bit comparator greatequal for signal <old_TEN_17$cmp_ge0000> created at line 77.
+    Found 4-bit subtractor for signal <old_TEN_21$addsub0000> created at line 84.
+    Found 4-bit comparator greatequal for signal <old_TEN_21$cmp_ge0000> created at line 83.
+    Found 4-bit adder for signal <old_TEN_22$addsub0000> created at line 92.
+    Found 4-bit comparator greatequal for signal <old_TEN_22$cmp_ge0000> created at line 89.
+    Found 4-bit adder for signal <old_TEN_9$addsub0000> created at line 60.
+    Found 4-bit comparator greatequal for signal <old_TEN_9$cmp_ge0000> created at line 57.
+    Found 4-bit subtractor for signal <ONE$addsub0000> created at line 91.
+    Found 4-bit subtractor for signal <TEN$addsub0000> created at line 96.
+    Found 4-bit comparator greatequal for signal <TEN$cmp_ge0000> created at line 95.
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+Unit <bin8_bcd3> synthesized.
+
+
+Synthesizing Unit <dff1s>.
+    Related source file is "dff1s.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff1s> synthesized.
+
+
+Synthesizing Unit <cntr16ce>.
+    Related source file is "cntr16ce.v".
+    Found 16-bit up counter for signal <q_fb>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <cntr16ce> synthesized.
+
+
+Synthesizing Unit <compeq16>.
+    Related source file is "compeq16.v".
+    Found 16-bit comparator equal for signal <eq>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <compeq16> synthesized.
+
+
+Synthesizing Unit <mult16x16>.
+    Related source file is "mult16x16.v".
+    Found 16x16-bit multiplier for signal <prod>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <mult16x16> synthesized.
+
+
+Synthesizing Unit <reg8e>.
+    Related source file is "reg8e.v".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg8e> synthesized.
+
+
+Synthesizing Unit <ping>.
+    Related source file is "ping.v".
+WARNING:Xst:646 - Signal <inch_prod<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <inch_prod<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cm_prod<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cm_prod<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ping> synthesized.
+
+
+Synthesizing Unit <ping_top>.
+    Related source file is "ping_top.v".
+WARNING:Xst:653 - Signal <state> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <SWITCHES> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <LEDS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BTNS_Q2<4:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <BTNS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <PULSPIN>.
+    Found 5-bit register for signal <BTNS_Q1>.
+    Found 5-bit register for signal <BTNS_Q2>.
+    Found 25-bit up counter for signal <clk_div>.
+    Found 8-bit register for signal <val>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Tristate(s).
+Unit <ping_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x2-bit ROM                                          : 1
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 22
+ 4-bit adder                                           : 15
+ 4-bit subtractor                                      : 7
+# Counters                                             : 5
+ 16-bit up counter                                     : 4
+ 25-bit up counter                                     : 1
+# Registers                                            : 10
+ 1-bit register                                        : 6
+ 5-bit register                                        : 2
+ 8-bit register                                        : 2
+# Comparators                                          : 13
+ 16-bit comparator equal                               : 4
+ 4-bit comparator greatequal                           : 7
+ 8-bit comparator greatequal                           : 2
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <BTNS_Q1_2> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q1_3> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q1_4> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q2_2> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q2_3> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q2_4> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q1_2> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q1_3> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q1_4> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q2_2> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q2_3> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <BTNS_Q2_4> of sequential type is unconnected in block <ping_top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x2-bit ROM                                          : 1
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 22
+ 4-bit adder                                           : 15
+ 4-bit subtractor                                      : 7
+# Counters                                             : 5
+ 16-bit up counter                                     : 4
+ 25-bit up counter                                     : 1
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+# Comparators                                          : 13
+ 16-bit comparator equal                               : 4
+ 4-bit comparator greatequal                           : 7
+ 8-bit comparator greatequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <clk_div_20> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <clk_div_21> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <clk_div_22> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <clk_div_23> of sequential type is unconnected in block <ping_top>.
+WARNING:Xst:2677 - Node <clk_div_24> of sequential type is unconnected in block <ping_top>.
+
+Optimizing unit <ping_top> ...
+
+Optimizing unit <bin8_bcd3> ...
+
+Optimizing unit <reg8e> ...
+
+Optimizing unit <ping> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ping_top, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 110
+ Flip-Flops                                            : 110
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ping_top.ngr
+Top Level Output File Name         : ping_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 35
+
+Cell Usage :
+# BELS                             : 370
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 79
+#      LUT2                        : 12
+#      LUT3                        : 25
+#      LUT4                        : 70
+#      LUT4_D                      : 3
+#      MUXCY                       : 79
+#      MUXF5                       : 11
+#      VCC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 110
+#      FD                          : 24
+#      FDRE                        : 80
+#      FDRS                        : 6
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 3
+#      IOBUF                       : 1
+#      OBUF                        : 20
+# MULTs                            : 2
+#      MULT18X18SIO                : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      103  out of   4656     2%  
+ Number of Slice Flip Flops:            110  out of   9312     1%  
+ Number of 4 input LUTs:                194  out of   9312     2%  
+ Number of IOs:                          35
+ Number of bonded IOBs:                  25  out of    232    10%  
+ Number of MULT18X18SIOs:                 2  out of     20    10%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_div_71                         | BUFG                   | 90    |
+CLKPORT                            | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.602ns (Maximum Frequency: 151.461MHz)
+   Minimum input arrival time before clock: 4.032ns
+   Maximum output required time after clock: 16.983ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div_71'
+  Clock period: 6.602ns (frequency: 151.461MHz)
+  Total number of paths / destination ports: 1342 / 238
+-------------------------------------------------------------------------
+Delay:               6.602ns (Levels of Logic = 2)
+  Source:            myping/cntrce_measure/q_fb_1 (FF)
+  Destination:       myping/reg_result/q_1 (FF)
+  Source Clock:      clk_div_71 rising
+  Destination Clock: clk_div_71 rising
+
+  Data Path: myping/cntrce_measure/q_fb_1 to myping/reg_result/q_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.514   0.451  myping/cntrce_measure/q_fb_1 (myping/cntrce_measure/q_fb_1)
+     MULT18X18SIO:A1->P17    1   4.331   0.426  myping/mult_cm/Mmult_prod (myping/cm_prod<17>)
+     LUT3:I1->O            1   0.612   0.000  myping/result_in_1_or00001 (myping/result_in<1>)
+     FDRE:D                    0.268          myping/reg_result/q_1
+    ----------------------------------------
+    Total                      6.602ns (5.725ns logic, 0.877ns route)
+                                       (86.7% logic, 13.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKPORT'
+  Clock period: 3.882ns (frequency: 257.632MHz)
+  Total number of paths / destination ports: 210 / 20
+-------------------------------------------------------------------------
+Delay:               3.882ns (Levels of Logic = 20)
+  Source:            clk_div_1 (FF)
+  Destination:       clk_div_19 (FF)
+  Source Clock:      CLKPORT rising
+  Destination Clock: CLKPORT rising
+
+  Data Path: clk_div_1 to clk_div_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.514   0.509  clk_div_1 (clk_div_1)
+     LUT1:I0->O            1   0.612   0.000  Mcount_clk_div_cy<1>_rt (Mcount_clk_div_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcount_clk_div_cy<1> (Mcount_clk_div_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<2> (Mcount_clk_div_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<3> (Mcount_clk_div_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<4> (Mcount_clk_div_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<5> (Mcount_clk_div_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<6> (Mcount_clk_div_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<7> (Mcount_clk_div_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<8> (Mcount_clk_div_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<9> (Mcount_clk_div_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<10> (Mcount_clk_div_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<11> (Mcount_clk_div_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<12> (Mcount_clk_div_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<13> (Mcount_clk_div_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<14> (Mcount_clk_div_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<15> (Mcount_clk_div_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<16> (Mcount_clk_div_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_clk_div_cy<17> (Mcount_clk_div_cy<17>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_clk_div_cy<18> (Mcount_clk_div_cy<18>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_clk_div_xor<19> (Result<19>)
+     FD:D                      0.268          clk_div_19
+    ----------------------------------------
+    Total                      3.882ns (3.373ns logic, 0.509ns route)
+                                       (86.9% logic, 13.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div_71'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              4.032ns (Levels of Logic = 3)
+  Source:            PULSPIN (PAD)
+  Destination:       myping/dff_delay/q (FF)
+  Destination Clock: clk_div_71 rising
+
+  Data Path: PULSPIN to myping/dff_delay/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O          19   1.106   1.074  PULSPIN_IOBUF (N28)
+     LUT2:I0->O            1   0.612   0.360  myping/ddelay_SW0 (N12)
+     LUT4:I3->O            1   0.612   0.000  myping/ddelay (myping/ddelay)
+     FDRS:D                    0.268          myping/dff_delay/q
+    ----------------------------------------
+    Total                      4.032ns (2.598ns logic, 1.434ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div_71'
+  Total number of paths / destination ports: 18561 / 8
+-------------------------------------------------------------------------
+Offset:              16.983ns (Levels of Logic = 13)
+  Source:            val_5 (FF)
+  Destination:       CA (PAD)
+  Source Clock:      clk_div_71 rising
+
+  Data Path: val_5 to CA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            20   0.514   1.089  val_5 (val_5)
+     LUT4:I0->O            1   0.612   0.000  num_conv/_old_ONE_14<3>_F (N58)
+     MUXF5:I0->O          10   0.278   0.902  num_conv/_old_ONE_14<3> (num_conv/Madd__old_ONE_15_lut<3>)
+     LUT3:I0->O            5   0.612   0.607  num_conv/N01 (num_conv/N0)
+     LUT4:I1->O            2   0.612   0.449  num_conv/TEN<3>41 (num_conv/N16)
+     LUT2:I1->O            3   0.612   0.603  num_conv/_old_TEN_21<1>2_SW0 (N17)
+     LUT3:I0->O            1   0.612   0.000  num_conv/_old_TEN_21<2>11 (num_conv/_old_TEN_21<2>1)
+     MUXF5:I1->O           4   0.278   0.568  num_conv/_old_TEN_21<2>1_f5 (num_conv/Madd_old_TEN_22_addsub0000_lut<2>)
+     LUT4:I1->O            1   0.612   0.509  disp<1>48_SW0 (N34)
+     LUT4:I0->O            1   0.612   0.426  disp<1>119_SW0 (N50)
+     LUT4:I1->O            1   0.612   0.360  disp<1>119 (disp<1>119)
+     LUT4:I3->O            7   0.612   0.754  disp<1>324 (disp<1>)
+     LUT4:I0->O            1   0.612   0.357  led_decoder/E1 (CE_OBUF)
+     OBUF:I->O                 3.169          CE_OBUF (CE)
+    ----------------------------------------
+    Total                     16.983ns (10.359ns logic, 6.623ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKPORT'
+  Total number of paths / destination ports: 141 / 11
+-------------------------------------------------------------------------
+Offset:              8.568ns (Levels of Logic = 6)
+  Source:            clk_div_19 (FF)
+  Destination:       CB (PAD)
+  Source Clock:      CLKPORT rising
+
+  Data Path: clk_div_19 to CB
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.514   0.933  clk_div_19 (clk_div_19)
+     LUT4:I1->O            1   0.612   0.000  disp<3>82_F (N56)
+     MUXF5:I0->O           2   0.278   0.449  disp<3>82 (disp<3>82)
+     LUT4:I1->O            1   0.612   0.000  disp<3>2202 (disp<3>2201)
+     MUXF5:I0->O           7   0.278   0.754  disp<3>220_f5 (disp<3>)
+     LUT4:I0->O            1   0.612   0.357  led_decoder/Mrom_digit_rom000012 (CC_OBUF)
+     OBUF:I->O                 3.169          CC_OBUF (CC)
+    ----------------------------------------
+    Total                      8.568ns (6.075ns logic, 2.493ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.58 secs
+ 
+--> 
+
+Total memory usage is 292720 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

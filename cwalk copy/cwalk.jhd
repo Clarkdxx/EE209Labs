@@ -1,0 +1,3 @@
+MODULE cwalk
+	SUBMODULE cwalk_fsm
+		INSTANCE i_cwalkfsm

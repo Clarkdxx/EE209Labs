@@ -1,0 +1,7 @@
+verilog isim_temp "reg4e.v"
+verilog isim_temp "mux21_4bit.v"
+verilog isim_temp "adder4.v"
+verilog isim_temp "cntr4.v"
+verilog isim_temp "cwalk.v"
+verilog isim_temp "cwalk_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

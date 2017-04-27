@@ -1,0 +1,10 @@
+Command line:
+   lfsr_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62439
+
+Thu Mar 02 15:51:15 2017
+
+
+ Elaboration Time: 0.34375 sec

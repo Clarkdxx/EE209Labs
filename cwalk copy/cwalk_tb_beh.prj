@@ -1,0 +1,7 @@
+verilog work "reg4e.v"
+verilog work "mux21_4bit.v"
+verilog work "adder4.v"
+verilog work "cntr4.v"
+verilog work "cwalk.v"
+verilog work "cwalk_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

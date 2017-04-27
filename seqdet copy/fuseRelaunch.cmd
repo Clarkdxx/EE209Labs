@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "U:/Documents/EE209Labs/seqdet/seqdet_tb_isim_beh.exe" -prj "U:/Documents/EE209Labs/seqdet/seqdet_tb_beh.prj" "work.seqdet_tb" "work.glbl" 

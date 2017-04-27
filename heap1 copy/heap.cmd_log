@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "U:/Documents/EE209Labs/heap1/heap.xst" -ofn "U:/Documents/EE209Labs/heap1/heap.syr" 

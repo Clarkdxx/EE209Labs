@@ -1,0 +1,10 @@
+Command line:
+   mmind_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52296
+
+Thu Feb 09 16:44:48 2017
+
+
+ Elaboration Time: 0.09375 sec

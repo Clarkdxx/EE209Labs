@@ -1,0 +1,728 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Reading design: vending_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vending_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vending_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vending_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\dff1s.v" into library work
+Parsing module <dff1s>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_fsm.v" into library work
+Parsing module <vending_fsm>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\reg8e.v" into library work
+Parsing module <reg8e>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\pe4_2.v" into library work
+Parsing module <pe4_2>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\mux21_8bit.v" into library work
+Parsing module <mux21_8bit>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\moneymux.v" into library work
+Parsing module <moneymux>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\comp8.v" into library work
+Parsing module <comp8>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\adder8.v" into library work
+Parsing module <adder8>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" into library work
+Parsing module <vending>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\sevenseg_decoder.v" into library work
+Parsing module <sevenseg_decoder>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" into library work
+Parsing module <bin8_bcd3>.
+Analyzing Verilog file "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_top.v" into library work
+Parsing module <vending_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vending_top>.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_top.v" Line 59: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_top.v" Line 65: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:1127 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_top.v" Line 69: Assignment to BTNS_Q2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_top.v" Line 76: Assignment to temp ignored, since the identifier is never used
+
+Elaborating module <sevenseg_decoder>.
+
+Elaborating module <bin8_bcd3>.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 42: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 44: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 47: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 50: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 56: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 59: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 60: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 62: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 66: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 69: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 70: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 79: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 82: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 84: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 88: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 91: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 92: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 94: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v" Line 96: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <vending>.
+
+Elaborating module <vending_fsm>.
+
+Elaborating module <dff1s>.
+
+Elaborating module <adder8>.
+
+Elaborating module <pe4_2>.
+
+Elaborating module <moneymux>.
+
+Elaborating module <reg8e>.
+
+Elaborating module <comp8>.
+
+Elaborating module <mux21_8bit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vending_top>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_top.v".
+WARNING:Xst:647 - Input <sw<6:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 26-bit register for signal <clk_div>.
+    Found 5-bit register for signal <BTNS_Q1>.
+    Found 1-bit register for signal <RELS>.
+    Found 1-bit register for signal <RELDP>.
+    Found 1-bit register for signal <RELDC>.
+    Found 1-bit register for signal <RELC>.
+    Found 26-bit adder for signal <clk_div[25]_GND_1_o_add_6_OUT> created at line 65.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <vending_top> synthesized.
+
+Synthesizing Unit <sevenseg_decoder>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\sevenseg_decoder.v".
+    Found 16x7-bit Read Only RAM for signal <_n0026>
+    Summary:
+	inferred   1 RAM(s).
+Unit <sevenseg_decoder> synthesized.
+
+Synthesizing Unit <bin8_bcd3>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\bin8_bcd3.v".
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_5_OUT> created at line 42.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_7_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_3_o_PWR_3_o_add_9_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_16_OUT> created at line 56.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_19_OUT> created at line 60.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_22_OUT> created at line 62.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_25_OUT> created at line 66.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_28_OUT> created at line 70.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_31_OUT> created at line 72.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_34_OUT> created at line 76.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_37_OUT> created at line 80.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_40_OUT> created at line 82.
+    Found 4-bit adder for signal <GND_3_o_PWR_3_o_add_46_OUT> created at line 88.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_49_OUT> created at line 92.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_52_OUT> created at line 94.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_12_OUT<3:0>> created at line 50.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_19_OUT<3:0>> created at line 59.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_28_OUT<3:0>> created at line 69.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_37_OUT<3:0>> created at line 79.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_43_OUT<3:0>> created at line 84.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_49_OUT<3:0>> created at line 91.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_55_OUT<3:0>> created at line 96.
+    Found 8-bit comparator lessequal for signal <n0000> created at line 32
+    Found 8-bit comparator lessequal for signal <n0002> created at line 34
+    Found 4-bit comparator lessequal for signal <n0012> created at line 48
+    Found 4-bit comparator lessequal for signal <n0020> created at line 57
+    Found 4-bit comparator lessequal for signal <n0030> created at line 67
+    Found 4-bit comparator lessequal for signal <n0040> created at line 77
+    Found 4-bit comparator lessequal for signal <n0047> created at line 83
+    Found 4-bit comparator lessequal for signal <n0054> created at line 89
+    Found 4-bit comparator lessequal for signal <n0061> created at line 95
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <bin8_bcd3> synthesized.
+
+Synthesizing Unit <vending>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v".
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 71: Output port <C8> of the instance <money_adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 95: Output port <LT> of the instance <comp_mge> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 95: Output port <EQ> of the instance <comp_mge> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 119: Output port <LT> of the instance <comp_mge5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 119: Output port <EQ> of the instance <comp_mge5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 125: Output port <LT> of the instance <comp_mge10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 125: Output port <EQ> of the instance <comp_mge10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 131: Output port <LT> of the instance <comp_mge25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 131: Output port <EQ> of the instance <comp_mge25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 137: Output port <LT> of the instance <comp_ceq0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 137: Output port <GT> of the instance <comp_ceq0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 157: Output port <C8> of the instance <change_subtractor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending.v" line 163: Output port <C8> of the instance <m_subtractor> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <vending> synthesized.
+
+Synthesizing Unit <vending_fsm>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\vending_fsm.v".
+    Summary:
+	no macro.
+Unit <vending_fsm> synthesized.
+
+Synthesizing Unit <dff1s>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\dff1s.v".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff1s> synthesized.
+
+Synthesizing Unit <adder8>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\adder8.v".
+    Found 9-bit adder for signal <n0011> created at line 29.
+    Found 9-bit adder for signal <n0004> created at line 29.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <adder8> synthesized.
+
+Synthesizing Unit <pe4_2>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\pe4_2.v".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <pe4_2> synthesized.
+
+Synthesizing Unit <moneymux>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\moneymux.v".
+    Found 4x8-bit Read Only RAM for signal <MONEY>
+    Summary:
+	inferred   1 RAM(s).
+Unit <moneymux> synthesized.
+
+Synthesizing Unit <reg8e>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\reg8e.v".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg8e> synthesized.
+
+Synthesizing Unit <comp8>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\comp8.v".
+    Found 9-bit comparator greater for signal <LT> created at line 32
+    Found 9-bit comparator greater for signal <GT> created at line 33
+    Found 8-bit comparator equal for signal <EQ> created at line 26
+    Summary:
+	inferred   3 Comparator(s).
+Unit <comp8> synthesized.
+
+Synthesizing Unit <mux21_8bit>.
+    Related source file is "\\vlabfs.vlab.usc.edu\home$\xiaoxida\Documents\EE209Labs\vending\mux21_8bit.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux21_8bit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x8-bit single-port Read Only RAM                     : 2
+# Adders/Subtractors                                   : 29
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 15
+ 4-bit subtractor                                      : 7
+ 9-bit adder                                           : 6
+# Registers                                            : 12
+ 1-bit register                                        : 8
+ 26-bit register                                       : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 24
+ 4-bit comparator lessequal                            : 7
+ 8-bit comparator equal                                : 5
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator greater                              : 10
+# Multiplexers                                         : 35
+ 2-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 29
+ 8-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <BTNS_Q1_3> of sequential type is unconnected in block <vending_top>.
+
+Synthesizing (advanced) Unit <moneymux>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_MONEY> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <S>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <MONEY>         |          |
+    -----------------------------------------------------------------------
+Unit <moneymux> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sevenseg_decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0026> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(I3,I2,I1,I0)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <sevenseg_decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vending_top>.
+The following registers are absorbed into counter <clk_div>: 1 register on signal <clk_div>.
+Unit <vending_top> synthesized (advanced).
+WARNING:Xst:2677 - Node <BTNS_Q1_3> of sequential type is unconnected in block <vending_top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x8-bit single-port distributed Read Only RAM         : 2
+# Adders/Subtractors                                   : 25
+ 4-bit adder                                           : 15
+ 4-bit subtractor                                      : 7
+ 9-bit adder carry in                                  : 3
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+# Comparators                                          : 24
+ 4-bit comparator lessequal                            : 7
+ 8-bit comparator equal                                : 5
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator greater                              : 10
+# Multiplexers                                         : 35
+ 2-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 29
+ 8-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <reg8e> ...
+
+Optimizing unit <vending_top> ...
+
+Optimizing unit <vending> ...
+
+Optimizing unit <vending_fsm> ...
+
+Optimizing unit <bin8_bcd3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vending_top, actual ratio is 1.
+FlipFlop myvending/fsm/change/q has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 55
+ Flip-Flops                                            : 55
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vending_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 210
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 26
+#      LUT2                        : 12
+#      LUT3                        : 21
+#      LUT4                        : 17
+#      LUT5                        : 19
+#      LUT6                        : 27
+#      MUXCY                       : 39
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 55
+#      FD                          : 35
+#      FDR                         : 4
+#      FDRE                        : 16
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 9
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              55  out of  18224     0%  
+ Number of Slice LUTs:                  124  out of   9112     1%  
+    Number used as Logic:               124  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    127
+   Number with an unused Flip Flop:      72  out of    127    56%  
+   Number with an unused LUT:             3  out of    127     2%  
+   Number of fully used LUT-FF pairs:    52  out of    127    40%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  30  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_div_25                         | BUFG                   | 29    |
+CLKPORT                            | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.691ns (Maximum Frequency: 213.186MHz)
+   Minimum input arrival time before clock: 3.749ns
+   Maximum output required time after clock: 12.427ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div_25'
+  Clock period: 4.691ns (frequency: 213.186MHz)
+  Total number of paths / destination ports: 774 / 61
+-------------------------------------------------------------------------
+Delay:               4.691ns (Levels of Logic = 12)
+  Source:            myvending/creg/q_7 (FF)
+  Destination:       myvending/creg/q_7 (FF)
+  Source Clock:      clk_div_25 rising
+  Destination Clock: clk_div_25 rising
+
+  Data Path: myvending/creg/q_7 to myvending/creg/q_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.447   1.002  myvending/creg/q_7 (myvending/creg/q_7)
+     LUT3:I0->O            5   0.205   0.714  myvending/msnum2[7]_inv_0_OUT<1>31 (myvending/msnum2[7]_inv_0_OUT<1>3)
+     MUXF7:S->O            2   0.148   0.617  myvending/enc2/Mmux_yint121 (led_5_OBUF)
+     LUT3:I2->O            1   0.205   0.000  myvending/change_subtractor/Madd_n0004_Madd_lut<0> (myvending/change_subtractor/Madd_n0004_Madd_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<0> (myvending/change_subtractor/Madd_n0004_Madd_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<1> (myvending/change_subtractor/Madd_n0004_Madd_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<2> (myvending/change_subtractor/Madd_n0004_Madd_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<3> (myvending/change_subtractor/Madd_n0004_Madd_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<4> (myvending/change_subtractor/Madd_n0004_Madd_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<5> (myvending/change_subtractor/Madd_n0004_Madd_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  myvending/change_subtractor/Madd_n0004_Madd_cy<6> (myvending/change_subtractor/Madd_n0004_Madd_cy<6>)
+     XORCY:CI->O           1   0.180   0.580  myvending/change_subtractor/Madd_n0004_Madd_xor<7> (myvending/c_d<7>)
+     LUT6:I5->O            1   0.205   0.000  myvending/d_in_c<7>1 (myvending/d_in_c<7>)
+     FDRE:D                    0.102          myvending/creg/q_7
+    ----------------------------------------
+    Total                      4.691ns (1.778ns logic, 2.913ns route)
+                                       (37.9% logic, 62.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKPORT'
+  Clock period: 2.159ns (frequency: 463.156MHz)
+  Total number of paths / destination ports: 351 / 26
+-------------------------------------------------------------------------
+Delay:               2.159ns (Levels of Logic = 8)
+  Source:            clk_div_19 (FF)
+  Destination:       clk_div_25 (FF)
+  Source Clock:      CLKPORT rising
+  Destination Clock: CLKPORT rising
+
+  Data Path: clk_div_19 to clk_div_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.447   0.958  clk_div_19 (clk_div_19)
+     LUT1:I0->O            1   0.205   0.000  Mcount_clk_div_cy<19>_rt (Mcount_clk_div_cy<19>_rt)
+     MUXCY:S->O            1   0.172   0.000  Mcount_clk_div_cy<19> (Mcount_clk_div_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clk_div_cy<20> (Mcount_clk_div_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clk_div_cy<21> (Mcount_clk_div_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clk_div_cy<22> (Mcount_clk_div_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clk_div_cy<23> (Mcount_clk_div_cy<23>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_clk_div_cy<24> (Mcount_clk_div_cy<24>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_clk_div_xor<25> (Result<25>)
+     FD:D                      0.102          clk_div_25
+    ----------------------------------------
+    Total                      2.159ns (1.201ns logic, 0.958ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div_25'
+  Total number of paths / destination ports: 43 / 31
+-------------------------------------------------------------------------
+Offset:              3.749ns (Levels of Logic = 2)
+  Source:            sw<7> (PAD)
+  Destination:       myvending/creg/q_7 (FF)
+  Destination Clock: clk_div_25 rising
+
+  Data Path: sw<7> to myvending/creg/q_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.961  sw_7_IBUF (sw_7_IBUF)
+     LUT5:I0->O           13   0.203   0.932  myreset1 (myreset)
+     FDRE:R                    0.430          myvending/creg/q_0
+    ----------------------------------------
+    Total                      3.749ns (1.855ns logic, 1.894ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKPORT'
+  Total number of paths / destination ports: 107 / 12
+-------------------------------------------------------------------------
+Offset:              7.232ns (Levels of Logic = 4)
+  Source:            clk_div_19 (FF)
+  Destination:       CF (PAD)
+  Source Clock:      CLKPORT rising
+
+  Data Path: clk_div_19 to CF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.447   1.322  clk_div_19 (clk_div_19)
+     LUT6:I0->O            1   0.203   0.684  Mmux_disp23 (Mmux_disp22)
+     LUT5:I3->O            7   0.203   1.021  Mmux_disp25 (disp<1>)
+     LUT4:I0->O            1   0.203   0.579  led_decoder/Mram__n002631 (CF_OBUF)
+     OBUF:I->O                 2.571          CF_OBUF (CF)
+    ----------------------------------------
+    Total                      7.232ns (3.627ns logic, 3.605ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div_25'
+  Total number of paths / destination ports: 11056 / 14
+-------------------------------------------------------------------------
+Offset:              12.427ns (Levels of Logic = 9)
+  Source:            myvending/fsm/change/q (FF)
+  Destination:       CA (PAD)
+  Source Clock:      clk_div_25 rising
+
+  Data Path: myvending/fsm/change/q to CA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             22   0.447   1.362  myvending/fsm/change/q (myvending/fsm/change/q)
+     LUT3:I0->O           10   0.205   1.201  Mmux_NUM31 (NUM<2>)
+     LUT5:I0->O            7   0.203   1.002  num_conv/Mmux_n014231 (num_conv/Madd_GND_3_o_GND_3_o_add_34_OUT_cy<2>)
+     LUT3:I0->O            2   0.205   0.864  num_conv/Mmux_n015043 (num_conv/Mmux_n015042)
+     LUT6:I2->O            1   0.203   0.000  num_conv/Mmux_n015045_F (N26)
+     MUXF7:I0->O           3   0.131   1.015  num_conv/Mmux_n015045 (num_conv/Madd_GND_3_o_GND_3_o_add_49_OUT_lut<3>)
+     LUT6:I0->O            1   0.203   0.808  Mmux_disp42 (Mmux_disp41)
+     LUT5:I2->O            7   0.205   1.021  Mmux_disp43 (disp<3>)
+     LUT4:I0->O            1   0.203   0.579  led_decoder/Mram__n002661 (CA_OBUF)
+     OBUF:I->O                 2.571          CA_OBUF (CA)
+    ----------------------------------------
+    Total                     12.427ns (4.576ns logic, 7.851ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLKPORT
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKPORT        |    2.159|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_div_25
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_div_25     |    4.691|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.63 secs
+ 
+--> 
+
+Total memory usage is 265256 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

@@ -1,0 +1,35 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o U:/Documents/EE209Labs/vending/vending_tb_isim_beh.exe -prj U:/Documents/EE209Labs/vending/vending_tb_beh.prj work.vending_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/dff1s.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/vending_fsm.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/reg8e.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/pe4_2.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/mux21_8bit.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/moneymux.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/comp8.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/adder8.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/vending.v" into library work
+Analyzing Verilog file "U:/Documents/EE209Labs/vending/vending_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module dff1s
+Compiling module vending_fsm
+Compiling module adder8
+Compiling module pe4_2
+Compiling module moneymux
+Compiling module reg8e
+Compiling module comp8
+Compiling module mux21_8bit
+Compiling module vending
+Compiling module vending_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable U:/Documents/EE209Labs/vending/vending_tb_isim_beh.exe
+Fuse Memory Usage: 29664 KB
+Fuse CPU Usage: 811 ms

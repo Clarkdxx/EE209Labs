@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "U:/Documents/EE209Labs/heap3/heap_soc.xst" -ofn "U:/Documents/EE209Labs/heap3/heap_soc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 heap_soc.ngc heap_soc.ngd  
+xst -intstyle ise -ifn "U:/Documents/EE209Labs/heap3/heap_soc.xst" -ofn "U:/Documents/EE209Labs/heap3/heap_soc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 heap_soc.ngc heap_soc.ngd  

@@ -1,0 +1,57 @@
+; $ python2.7 opbasm.py -i sqrt2_prog.psm -t ROM_form_S6_1K_5Aug11.vhd -6
+; btns[0] = PUSH
+; btns[1] = POP
+; btns[2] = TOP
+; btns[3] = SIZE
+
+; Inport addresses:
+;   0x00 => {4'b0000,btns}
+;   0x01 => switches[7:0]
+;   0x02 => {7'b0000000,done}
+;   0x03 => dout[7:0]
+;   0x04 => size[7:0]
+
+; Outport addresses:
+;   0x01 => din[7:0]
+;   0x02 => {4'b0000,size,top,pop,push}  (operation start signals)
+;   0x04 => acknowledge
+;   0x08 => display[7:0]
+;   0x10 => leds[7:0]
+
+    load    se, 00		; load opcnt
+L1:	add     se, 01		; increment opcnt
+	output  se, 10		; output to leds
+L2: input   s1, 00  	; read btns
+	compare s1, 00		;
+	jump	Z,	L2		;
+	compare	s1, 08		;
+	jump	NZ,	L3		;
+	input 	s2, 04		;
+	output	s2, 08		;
+	jump	L9			;
+L3:	compare s1, 04		;
+	jump	NZ,	L4		;
+	input 	s3, 03		;
+	output 	s3,	08		;
+	jump	L9			;
+L4:	compare s1, 02		;
+	jump	NZ,	L5		;
+	load	s4, 02		;
+	jump	L6			;
+L5:	compare	s1, 01		;
+	jump	NZ,	L6		;
+	input	s5,	01		;
+	output	s5,	01		;
+	load	s4,	01		;
+L6:	output	s4,	02		;
+L7:	input	s6,	02		;
+	compare s6,	00		;
+	jump	Z,	L7		;
+	load	s7,	01		;
+	output	s7,	04		;
+	input	s8,	03		;
+	output	s8,	08		;
+L9:	input	s9,	00		;
+	compare s9,	00		;
+	jump	NZ,	L9		;
+	jump	L1			;

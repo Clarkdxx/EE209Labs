@@ -1,0 +1,7 @@
+verilog work "reg4e.v"
+verilog work "mux21_4bit.v"
+verilog work "adder4.v"
+verilog work "cntr4.v"
+verilog work "sevenseg_decoder.v"
+verilog work "cwalk.v"
+verilog work "cwalk_top.v"

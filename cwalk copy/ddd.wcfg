@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/Documents/EE209Labs/cwalk/cwalk_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cwalk_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/cwalk_tb/walk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">walk</obj_property>
+      <obj_property name="ObjectShortName">walk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/hand" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hand</obj_property>
+      <obj_property name="ObjectShortName">hand</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/num_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">num_on</obj_property>
+      <obj_property name="ObjectShortName">num_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/num" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/UUT/cntr4_0/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cwalk_tb/UUT/cntr4_1/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[3:0]</obj_property>
+      <obj_property name="ObjectShortName">q[3:0]</obj_property>
+   </wvobject>
+</wave_config>
